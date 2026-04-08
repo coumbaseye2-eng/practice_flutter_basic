@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:practice_flutter_basic/exercice_1.dart';
 
 import 'exercice_2.dart';
+import 'exercice_3.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -65,7 +66,7 @@ class MyHomePage extends StatelessWidget{
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (BuildContext context) => EchangPage(),
+                      builder: (BuildContext context) => TimePage(),
                     ),
                   );
                 },
