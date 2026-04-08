@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practice_flutter_basic/exercice_1.dart';
+
+import 'exercice_2.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -32,8 +34,6 @@ class MyHomePage extends StatelessWidget{
             padding: EdgeInsets.all(16),
           child: Column(
             children: [
-              Text("Exercice_1",style: TextStyle(fontWeight: FontWeight.bold,
-              fontSize: 16,color: Colors.indigoAccent, ),),
               ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -43,13 +43,35 @@ class MyHomePage extends StatelessWidget{
                   ),
                 );
               },
-                  child: Text("data")),
+                  child:  Text("Exercice_1",style: TextStyle(fontWeight: FontWeight.bold,
+                    fontSize: 16,color: Colors.indigoAccent, ),),
+              ),
               const SizedBox(height: 8),
-              Text("Exercice_2",style: TextStyle(fontWeight: FontWeight.bold,
-                fontSize: 16,color: Colors.indigoAccent, ),),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => AirePage(),
+                    ),
+                  );
+                },
+                child:  Text("Exercice_2",style: TextStyle(fontWeight: FontWeight.bold,
+                  fontSize: 16,color: Colors.indigoAccent, ),),
+              ),
               const SizedBox(height: 8),
-              Text("Exercice_3",style: TextStyle(fontWeight: FontWeight.bold,
-                fontSize: 16,color: Colors.indigoAccent, ),),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => EchangPage(),
+                    ),
+                  );
+                },
+                child: Text("Exercice_3",style: TextStyle(fontWeight: FontWeight.bold,
+                  fontSize: 16,color: Colors.indigoAccent, ),),
+              ),
             ],
           ),
 
